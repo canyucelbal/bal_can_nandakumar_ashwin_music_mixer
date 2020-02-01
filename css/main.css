@@ -1,0 +1,52 @@
+.container {
+	
+	margin: 0 auto;
+	background-color: white;
+	width: 1000px;
+}
+
+.border {
+	width: 1000px;
+	height: 20px;
+	background-color: black;
+	margin-bottom: 40px;
+}
+.border1 {
+	width: 1000px;
+	height: 20px;
+	background-color: black;
+	margin-top: 40px;
+}
+
+.musicArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.mainDropArea {
+	display: flex;
+	justify-content: center;
+	width: 900px;
+	margin-left: 50px;
+	background-color: black;
+	height: 500px;
+	margin-bottom: 20px;
+
+}
+
+.musicIconsArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.musicIcons {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-bottom: 10px;	
+	background-color: black;
+}
