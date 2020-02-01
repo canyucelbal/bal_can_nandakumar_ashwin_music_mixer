@@ -1,8 +1,19 @@
+.logo {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	margin: 0 auto;
+}
+
 .container {
 	
 	margin: 0 auto;
 	background-color: white;
 	width: 1000px;
+}
+
+.logo #music_x5F_lines:hover {
+	background-color: black;
+	fill: white;
 }
 
 .border {
