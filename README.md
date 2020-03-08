@@ -33,7 +33,7 @@ You can use every browser, such as:
 ## Programs - Softwares
 <ul>
 	<li>Sublime Text</li><img src="images/sublime.png">
-	<li>Adobe Photoshop</li><img src="images/photoshop.png">
+	<li>Adobe Photoshop</li><img src="images/ps.png">
 	<li>Adobe Illustrator</li><img src="images/illustrator.png">
 	<li>Chrome</li><img src="images/chrome.png">
 	<li>Firefox</li><img src="images/firefox.png">
