@@ -1,63 +1,71 @@
+.musicIcon {
+	width: 60px;
+	height: 60px;
+margin-left: 3px;
+	margin-right: 3px;
+}
+
 .logo {
-	padding-bottom: 30px;
-	margin-bottom: 30px;
 	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.musicIconsArea {
+	width: 400px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+}
+
+.dropAndIcons {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: 20px; 
+}
+
+.mainDropArea {
+	border: 3px solid black;
+	border-radius: 10%;
+	width: 400px;
+	height: 300px;
+}
+
+.IconRow {
+margin-top: 6px;
+	width: 320px;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
 }
 
 .container {
-	
+	width: 1000px;
 	margin: 0 auto;
-	background-color: white;
-	width: 1000px;
+	display: flex;
 }
 
-.logo #music_x5F_lines:hover {
-	background-color: black;
-	fill: white;
-}
+body {
 
-.border {
-	width: 1000px;
-	height: 20px;
-	background-color: black;
-	margin-bottom: 40px;
-}
-.border1 {
-	width: 1000px;
-	height: 20px;
-	background-color: black;
-	margin-top: 40px;
+	background-image: url("../images/background3.jpg");
 }
 
 .musicArea {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-
 }
 
-.mainDropArea {
-	display: flex;
-	justify-content: center;
-	width: 900px;
-	margin-left: 50px;
-	background-color: black;
-	height: 500px;
-	margin-bottom: 20px;
-
-}
-
-.musicIconsArea {
+.barIcon {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-
+	width: 400px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 5px;
 }
 
-.musicIcons {
-	width: 50px;
-	height: 50px;
-	margin-right: 10px;
-	margin-bottom: 10px;	
-	background-color: black;
+.barIconsImages img{
+	width: 70px;
+	height: 70px;
+
 }
