@@ -2,10 +2,21 @@
 	const droparea = document.querySelector('.mainDropArea'),
 	dropZones = document.querySelectorAll('.dropArea'),
 	iconrow = document.querySelectorAll('.IconRow img'),
-
+	audioElement = document.querySelector('audio'),
 	musicIcons = document.querySelector('.musicIconsArea');
 
+
 const pieceNames = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
+
+function playTrack() {
+ 
+console.log("playing audio");
+  let audioSource = iconrow.dataset.musicref;
+  audioElement.src = `audio/${audioSource}.wav`;
+
+ audioElement.load();
+audioElement.play();
+  }
 
 function getref(){
 	pieceNames.forEach((piece, index) =>{
@@ -47,11 +58,12 @@ function allowDrop(event) {
 
  	musicIcons.appendChild(iconrow.firstChild);
  }
- }
+playTrack();
+}
 
 iconrow.forEach(piece => piece.addEventListener('click', getref));
 
-iconrow.forEach(piece => piece.addEventListener('click', resetPieces))
+iconrow.forEach(piece => piece.addEventListener('click', resetPieces));
 
 iconrow.forEach(piece => piece.addEventListener('dragstart', allowDrag));
 
