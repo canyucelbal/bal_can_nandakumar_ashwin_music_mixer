@@ -4,18 +4,18 @@
 	iconrow = document.querySelectorAll('.IconRow img'),
 	audioElement = document.querySelector('audio'),
 	musicIcons = document.querySelector('.musicIconsArea');
-
+	
 
 const pieceNames = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
 
-function playTrack() {
+function playTrack(track) {
  
 console.log("playing audio");
-  let audioSource = iconrow.dataset.musicref;
-  audioElement.src = `audio/${audioSource}.wav`;
+  audioElement.src = `audio/${track}.wav`;
 
  audioElement.load();
 audioElement.play();
+
   }
 
 function getref(){
@@ -36,6 +36,7 @@ function allowDrag(event) {
 	console.log ('dragged an image');
 
 event.dataTransfer.setData("text/plain", this.id);
+event.dataTransfer.setData("trackref", this.dataset.musicref);
 }
 
 
@@ -45,8 +46,9 @@ function allowDragOver(event) {
 }
 
 function allowDrop(event) {
-	getref();
+
 	console.log("drop");
+	let trackref = event.dataTransfer.getData("trackref");
   let draggedImage = event.dataTransfer.getData("text/plain", this.id);
 
  if (this.childNodes.length == 0){
@@ -58,7 +60,7 @@ function allowDrop(event) {
 
  	musicIcons.appendChild(iconrow.firstChild);
  }
-playTrack();
+playTrack(trackref);
 }
 
 iconrow.forEach(piece => piece.addEventListener('click', getref));
@@ -66,7 +68,7 @@ iconrow.forEach(piece => piece.addEventListener('click', getref));
 iconrow.forEach(piece => piece.addEventListener('click', resetPieces));
 
 iconrow.forEach(piece => piece.addEventListener('dragstart', allowDrag));
-
+	getref();
 dropZones.forEach(zone => zone.addEventListener('dragover', allowDragOver));
 
 dropZones.forEach(zone => zone.addEventListener('drop', allowDrop));	

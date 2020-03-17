@@ -1,22 +1,22 @@
 .musicIcon {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 margin-left: 3px;
 	margin-right: 3px;
-
-	flex-grow: 1;
+flex-grow: 1;
 }
 
 .dropArea {
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 68px;
 	display: flex;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	border: 3px solid black;
-	border-radius: 10%;
-	margin-left: 10px;
-	background-color: white;
+	border: 2px dotted #595959;
+	border-radius: 5%;
+	background-color: none;
+	margin-right: 10px;
+
 }
 
 .logo {
@@ -28,9 +28,12 @@ margin-left: 3px;
 
 .musicIconsArea {
 	width: 400px;
-	height: 300px;
+	height: 400px;
 	display: flex;
 	flex-direction: column;
+	border: 3px solid #595959;
+	border-radius: 5%;
+	margin-right: 37px;
 }
 
 .dropAndIcons {
@@ -40,31 +43,32 @@ margin-left: 3px;
 }
 
 .mainDropArea {
-	border: 3px solid black;
-	border-radius: 10%;
+	display: flex;
+	flex-direction: column;
+	border: 3px solid #595959;
+	border-radius: 5%;
 	width: 400px;
 	height: 400px;
-	background-color: gray;
+	background-color: none;
 
 }
 
 .dropRows {
 	display: flex;
-	flex-direction: row;
 	width: 350px;
-	margin-top: 20px;
-	margin-left: 15px;
-
-
+	margin-top: 22px;
+	margin-left: 28px;
+	margin-right: 10px;
 }
 
 
 .IconRow {
-margin-top: 6px;
-	width: 320px;
+margin-top: 15px;
+	width: 400px;
 	height: 70px;
 	display: flex;
 	flex-direction: row;
+	flex-grow: 1;
 }
 
 .container {
@@ -84,17 +88,27 @@ body {
 }
 
 .barIcon {
+	border: 3px solid #595959;
+	border-radius: 10%;
 	display: flex;
 	flex-direction: row;
-	width: 400px;
-	height: 90px;
+	width: 200px;
+	height: 50px;
 	margin: 0 auto;
-	padding-left: 70px;
 	margin-top: 20px;
+	flex-grow: 1
 }
 
 .barIconsImages img{
 	width: 45px;
-	margin-left: 25px;
+	height: 40px;
+	margin-top: 5px;
+	display: flex;
+	flex-grow: 1;
+}
+
+.barIconsImages {
+	display: flex;
+	flex-grow: 1;
 }
 
