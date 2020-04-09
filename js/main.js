@@ -23,6 +23,18 @@ console.log("playing audio");
 
   }
  audioElement.load();
+                 let audio = document.createElement('audio');
+
+audio.addEventListener("ended", function(){
+  document.body.removeChild(audio);
+});
+
+    audio.src=`audio/${track}.wav`;
+
+    document.body.appendChild(audio);
+
+    audio.play();
+    
 audioElement.play();
 
   }
