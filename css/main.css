@@ -19,16 +19,60 @@ flex-grow: 1;
 
 }
 
-.logo {
-	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 30px;
+
+.text {
+	display: flex;
+	flex-direction: row;
+}
+
+.text h3 {
+	font-family: 'Fjalla One', 'Arial', sans-serif;
+	font-size: 22px;
+	margin-bottom: 8px;
+}
+
+.text3 {
+	display: flex;
+	flex-direction: row;
+}
+
+.text3 h3 {
+	font-family: 'Fjalla One', 'Arial', sans-serif;
+	font-size: 22px;
+	margin-top: 5px;
+	margin-left: 390px;
 }
 
 
+.text1 {
+	display: flex;
+	margin-left: 150px;
+	margin-right: 325px;
+}
+
+.logo {
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.text4 h2{
+font-family: 'Fjalla One', 'Arial', sans-serif;
+	font-size: 18px;
+text-align: center;
+	margin-left: 10px;
+
+}
+
+.text4 {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
+
 .musicIconsArea {
 	width: 400px;
-	height: 400px;
+	height: 450px;
 	display: flex;
 	flex-direction: column;
 	border: 3px solid #595959;
@@ -48,7 +92,7 @@ flex-grow: 1;
 	border: 3px solid #595959;
 	border-radius: 5%;
 	width: 400px;
-	height: 400px;
+	height: 450px;
 	background-color: none;
 
 }
@@ -56,14 +100,14 @@ flex-grow: 1;
 .dropRows {
 	display: flex;
 	width: 350px;
-	margin-top: 22px;
+	margin-top: 35px;
 	margin-left: 28px;
 	margin-right: 10px;
 }
 
 
 .IconRow {
-margin-top: 15px;
+margin-top: 5px;
 	width: 400px;
 	height: 70px;
 	display: flex;
@@ -72,7 +116,7 @@ margin-top: 15px;
 }
 
 .container {
-	width: 800px;
+	width: 850px;
 	margin: 0 auto;
 	display: flex;
 }
@@ -95,7 +139,8 @@ body {
 	width: 200px;
 	height: 50px;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	flex-grow: 1
 }
 
