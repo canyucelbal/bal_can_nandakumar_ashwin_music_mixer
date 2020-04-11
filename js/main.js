@@ -32,10 +32,10 @@ audio.addEventListener("ended", function(){
     audio.src=`audio/${track}.wav`;
 
     document.body.appendChild(audio);
-
     audio.play();
-    
+    audio.volume = 0.5;
 audioElement.play();
+audioElement.volume = 0.5;
 
   }
 
